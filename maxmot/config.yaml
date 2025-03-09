@@ -65,38 +65,62 @@ cells:
   wk01:
     dataRef: "request"
     flowAnimation: *flow-slow
+    strokeColor:
+      dataRef: "request"
+      thresholds:
+        - { color: "rgb(86, 166, 75)", level: 0 }
   wk02:
     dataRef: "request"
     flowAnimation: *flow-slow
+    strokeColor:
+      dataRef: "request"
+      thresholds:
+        - { color: "rgb(86, 166, 75)", level: 0 }
   wk03:
     dataRef: "request"
     flowAnimation: *flow-slow
+    strokeColor:
+      dataRef: "request"
+      thresholds:
+        - { color: "rgb(86, 166, 75)", level: 0 }
   wk04:
     dataRef: "request"
     flowAnimation: *flow-slow
     strokeColor:
-    dataRef: "banco"
-    thresholds:
-      - { color: "rgb(219, 53, 69)", level: 0 }
-      - { color: "rgb(86, 166, 75)", level: 300 }
-      - { color: "rgb(230, 126, 34)", level: 5000 }
-      - { color: "rgb(219, 53, 69)", level: 9000 }
+      dataRef: "banco"
+      thresholds:
+        - { color: "rgb(219, 53, 69)", level: 0 }
+        - { color: "rgb(86, 166, 75)", level: 300 }
+        - { color: "rgb(230, 126, 34)", level: 5000 }
+        - { color: "rgb(219, 53, 69)", level: 9000 }
   wk05:
     dataRef: "request"
     flowAnimation: *flow-slow
     strokeColor:
-    dataRef: "banco"
-    thresholds:
-      - { color: "rgb(219, 53, 69)", level: 0 }
-      - { color: "rgb(86, 166, 75)", level: 300 }
-      - { color: "rgb(230, 126, 34)", level: 5000 }
-      - { color: "rgb(219, 53, 69)", level: 9000 }
+      dataRef: "banco"
+      thresholds:
+        - { color: "rgb(219, 53, 69)", level: 0 }
+        - { color: "rgb(86, 166, 75)", level: 300 }
+        - { color: "rgb(230, 126, 34)", level: 5000 }
+        - { color: "rgb(219, 53, 69)", level: 9000 }
   wk06:
     dataRef: "request"
     flowAnimation: *flow-slow
+    strokeColor:
+      dataRef: "request"
+      thresholds:
+        - { color: "rgb(86, 166, 75)", level: 0 }
   wk07:
     dataRef: "request"
     flowAnimation: *flow-slow
+    strokeColor:
+      dataRef: "request"
+      thresholds:
+        - { color: "rgb(86, 166, 75)", level: 0 }
   wk08:
     dataRef: "request"
     flowAnimation: *flow-slow
+    strokeColor:
+      dataRef: "request"
+      thresholds:
+        - { color: "rgb(86, 166, 75)", level: 0 }
