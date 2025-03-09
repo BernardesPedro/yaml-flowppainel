@@ -1,0 +1,88 @@
+---
+#------------------------------------------------------------------------------
+# YAML Aliases to simplify maintenance
+
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
+  - flowAnimation: &flow-slow
+      thresholdOffValue: 0
+      thresholdLwrValue: 0.1
+      thresholdLwrDurationSecs: 1
+      thresholdUprValue: 0.9
+      thresholdUprDurationSecs: 0.1
+
+#------------------------------------------------------------------------------
+
+cellIdPreamble: "cell-"
+gradientMode: "hue"
+cells:
+  database:
+    dataRef: "banco"
+    label:
+      separator: "cr"
+      units: "ops"
+      decimalPoints: 0
+    fillColor:
+      thresholds:
+        - { color: "rgb(219, 53, 69)", level: 0 }
+        - { color: "rgb(86, 166, 75)", level: 300 }
+        - { color: "rgb(230, 126, 34)", level: 5000 }
+        - { color: "rgb(219, 53, 69)", level: 9000 }
+  api:
+    dataRef: "request"
+    label:
+      separator: "colon"
+      units: "reqps"
+      decimalPoints: 1
+    fillColor:
+      thresholds:
+        - { color: "rgb(86, 166, 75)", level: 0.5 }
+        - { color: "rgb(230, 126, 34)", level: 0.7 }
+  front:
+    dataRef: "request"
+    label:
+      separator: "colon"
+      units: "reqps"
+      decimalPoints: 1
+    fillColor:
+      thresholds:
+        - { color: "rgb(86, 166, 75)", level: 0.1 }
+        - { color: "rgb(230, 126, 34)", level: 0.5 }
+        - { color: "rgb(219, 53, 69)", level: 0.7 }
+  workflow:
+    dataRef: "teste"
+    label:
+      separator: "ops"
+      units: "pps"
+    flowAnimation:
+      thresholdOffLevel: 0
+      thresholdLwrLevel: 0.1
+      thresholdLwrDurationSecs: 1
+      thresholdUprLevel: 0.18
+      thresholdUprDurationSecs: 0.1
+  wk01:
+    dataRef: "request"
+    flowAnimation: *flow-slow
+  wk02:
+    dataRef: "request"
+    flowAnimation: *flow-slow
+  wk03:
+    dataRef: "request"
+    flowAnimation: *flow-slow
+  wk04:
+    dataRef: "request"
+    flowAnimation: *flow-slow
+  wk05:
+    dataRef: "request"
+    flowAnimation: *flow-slow
+  wk06:
+    dataRef: "request"
+    flowAnimation: *flow-slow
+  wk07:
+    dataRef: "request"
+    flowAnimation: *flow-slow
+  wk08:
+    dataRef: "request"
+    flowAnimation: *flow-slow
